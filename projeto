@@ -1,0 +1,22 @@
+    Tarefa (Task):
+        Atributos: nome, data de vencimento, concluída (booleano)
+        Métodos:
+            marcar_como_concluida(): Marca a tarefa como concluída.
+            desmarcar_como_concluida(): Desmarca a tarefa como concluída.
+            __str__(): Retorna uma representação legível da tarefa (usado para exibição).
+
+    Gerenciador de Tarefas (TaskManager):
+        Atributos: lista de tarefas
+        Métodos:
+            adicionar_tarefa(tarefa): Adiciona uma nova tarefa à lista.
+            listar_tarefas(): Lista todas as tarefas pendentes.
+            marcar_tarefa_como_concluida(identificador): Marca uma tarefa específica como concluída.
+            remover_tarefa(identificador): Remove uma tarefa da lista.
+            salvar_tarefas_em_arquivo(nome_do_arquivo): Salva as tarefas em um arquivo.
+            carregar_tarefas_de_arquivo(nome_do_arquivo): Carrega tarefas de um arquivo.
+
+    Aplicação (App):
+        A classe principal que interage com o usuário e gerencia o fluxo do programa.
+        Métodos:
+            exibir_menu(): Exibe o menu de opções.
+            executar(): Executa o loop principal do programa, recebendo e processando comandos do usuário.
